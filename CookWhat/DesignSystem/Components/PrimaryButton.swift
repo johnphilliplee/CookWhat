@@ -10,6 +10,7 @@ import SwiftUI
 struct PrimaryButton: View {
     var action: () -> Void
     var label: String
+    @Binding var isEnabled: Bool
 
     var body: some View {
         Button(action: action) {
@@ -17,8 +18,9 @@ struct PrimaryButton: View {
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding()
-                .background(Color.blue)
+                .background(isEnabled ? Color.blue : Color.gray)
                 .cornerRadius(10)
         }
+        .disabled(!isEnabled)
     }
 }
