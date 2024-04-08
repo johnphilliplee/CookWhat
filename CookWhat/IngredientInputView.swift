@@ -15,30 +15,7 @@ struct IngredientInputView: View {
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
 
-            ScrollView(.horizontal, showsIndicators: false) {
-                ScrollViewReader { proxy in
-                    HStack {
-                        ForEach(ingredients, id: \.self) { ingredient in
-                            Text(ingredient)
-                                .font(.title2)
-                                .padding(.horizontal) // horizontal padding
-                                .padding(.vertical, 5) // reduced vertical padding
-                                .overlay(
-                                    Capsule().stroke(Color.gray, lineWidth: 1)
-                                )
-                                .id(ingredient)
-                        }
-                    }
-                    .padding(.horizontal)
-                    .onChange(of: ingredients.last) { newValue in
-                        if let newValue = newValue {
-                            withAnimation {
-                                proxy.scrollTo(newValue, anchor: .trailing)
-                            }
-                        }
-                    }
-                }
-            }
+            RemovableItemList(items: $ingredients)
 
             PrimaryButton(action: {
                 recipeService.fetchRecipes(ingredients: ingredients) { recipes in
@@ -46,7 +23,7 @@ struct IngredientInputView: View {
                 }
             }, label: "Find Recipes", isEnabled: .constant(!ingredients.isEmpty))
             .padding()
-            .disabled(ingredients.isEmpty) 
+            .disabled(ingredients.isEmpty)
 
             VStack {
                 ScrollView {

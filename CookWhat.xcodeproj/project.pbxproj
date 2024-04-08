@@ -18,6 +18,8 @@
 		EBB980BE2BC3A1C300BBECAD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980BD2BC3A1C300BBECAD /* Colors.swift */; };
 		EBB980C12BC3A20900BBECAD /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980C02BC3A20900BBECAD /* PrimaryButton.swift */; };
 		EBB980C42BC3A23A00BBECAD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980C32BC3A23A00BBECAD /* Card.swift */; };
+		EBB980C62BC3AFAD00BBECAD /* RemovableItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980C52BC3AFAD00BBECAD /* RemovableItemList.swift */; };
+		EBB980C82BC3B00000BBECAD /* RemovableItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980C72BC3B00000BBECAD /* RemovableItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		EBB980BD2BC3A1C300BBECAD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		EBB980C02BC3A20900BBECAD /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		EBB980C32BC3A23A00BBECAD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		EBB980C52BC3AFAD00BBECAD /* RemovableItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovableItemList.swift; sourceTree = "<group>"; };
+		EBB980C72BC3B00000BBECAD /* RemovableItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovableItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				EBB980C02BC3A20900BBECAD /* PrimaryButton.swift */,
+				EBB980C52BC3AFAD00BBECAD /* RemovableItemList.swift */,
+				EBB980C72BC3B00000BBECAD /* RemovableItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			files = (
 				EBB980B92BC3A18100BBECAD /* Title.swift in Sources */,
 				EBB980BE2BC3A1C300BBECAD /* Colors.swift in Sources */,
+				EBB980C62BC3AFAD00BBECAD /* RemovableItemList.swift in Sources */,
+				EBB980C82BC3B00000BBECAD /* RemovableItemView.swift in Sources */,
 				EBB9808A2BC3880E00BBECAD /* IngredientInputView.swift in Sources */,
 				EBB980B32BC394E900BBECAD /* RecipeService.swift in Sources */,
 				EBB980C12BC3A20900BBECAD /* PrimaryButton.swift in Sources */,
