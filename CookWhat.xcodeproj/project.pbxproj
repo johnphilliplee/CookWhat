@@ -12,19 +12,10 @@
 		EBB9808C2BC3881000BBECAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB9808B2BC3881000BBECAD /* Assets.xcassets */; };
 		EBB980902BC3881000BBECAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB9808F2BC3881000BBECAD /* Preview Assets.xcassets */; };
 		EBB9809A2BC3881100BBECAD /* CookWhatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980992BC3881100BBECAD /* CookWhatTests.swift */; };
-		EBB980A42BC3881100BBECAD /* CookWhatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980A32BC3881100BBECAD /* CookWhatUITests.swift */; };
-		EBB980A62BC3881100BBECAD /* CookWhatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980A52BC3881100BBECAD /* CookWhatUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		EBB980962BC3881100BBECAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBB9807C2BC3880E00BBECAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EBB980832BC3880E00BBECAD;
-			remoteInfo = CookWhat;
-		};
-		EBB980A02BC3881100BBECAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBB9807C2BC3880E00BBECAD /* Project object */;
 			proxyType = 1;
@@ -42,9 +33,6 @@
 		EBB9808F2BC3881000BBECAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBB980952BC3881100BBECAD /* CookWhatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookWhatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB980992BC3881100BBECAD /* CookWhatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookWhatTests.swift; sourceTree = "<group>"; };
-		EBB9809F2BC3881100BBECAD /* CookWhatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookWhatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBB980A32BC3881100BBECAD /* CookWhatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookWhatUITests.swift; sourceTree = "<group>"; };
-		EBB980A52BC3881100BBECAD /* CookWhatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookWhatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +50,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBB9809C2BC3881100BBECAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +58,6 @@
 			children = (
 				EBB980862BC3880E00BBECAD /* CookWhat */,
 				EBB980982BC3881100BBECAD /* CookWhatTests */,
-				EBB980A22BC3881100BBECAD /* CookWhatUITests */,
 				EBB980852BC3880E00BBECAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +67,6 @@
 			children = (
 				EBB980842BC3880E00BBECAD /* CookWhat.app */,
 				EBB980952BC3881100BBECAD /* CookWhatTests.xctest */,
-				EBB9809F2BC3881100BBECAD /* CookWhatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,15 +97,6 @@
 				EBB980992BC3881100BBECAD /* CookWhatTests.swift */,
 			);
 			path = CookWhatTests;
-			sourceTree = "<group>";
-		};
-		EBB980A22BC3881100BBECAD /* CookWhatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EBB980A32BC3881100BBECAD /* CookWhatUITests.swift */,
-				EBB980A52BC3881100BBECAD /* CookWhatUITestsLaunchTests.swift */,
-			);
-			path = CookWhatUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,24 +137,6 @@
 			productReference = EBB980952BC3881100BBECAD /* CookWhatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EBB9809E2BC3881100BBECAD /* CookWhatUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EBB980AF2BC3881100BBECAD /* Build configuration list for PBXNativeTarget "CookWhatUITests" */;
-			buildPhases = (
-				EBB9809B2BC3881100BBECAD /* Sources */,
-				EBB9809C2BC3881100BBECAD /* Frameworks */,
-				EBB9809D2BC3881100BBECAD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EBB980A12BC3881100BBECAD /* PBXTargetDependency */,
-			);
-			name = CookWhatUITests;
-			productName = CookWhatUITests;
-			productReference = EBB9809F2BC3881100BBECAD /* CookWhatUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,10 +151,6 @@
 						CreatedOnToolsVersion = 15.3;
 					};
 					EBB980942BC3881100BBECAD = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = EBB980832BC3880E00BBECAD;
-					};
-					EBB9809E2BC3881100BBECAD = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = EBB980832BC3880E00BBECAD;
 					};
@@ -223,7 +171,6 @@
 			targets = (
 				EBB980832BC3880E00BBECAD /* CookWhat */,
 				EBB980942BC3881100BBECAD /* CookWhatTests */,
-				EBB9809E2BC3881100BBECAD /* CookWhatUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,13 +186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EBB980932BC3881100BBECAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EBB9809D2BC3881100BBECAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,15 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBB9809B2BC3881100BBECAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EBB980A62BC3881100BBECAD /* CookWhatUITestsLaunchTests.swift in Sources */,
-				EBB980A42BC3881100BBECAD /* CookWhatUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = EBB980832BC3880E00BBECAD /* CookWhat */;
 			targetProxy = EBB980962BC3881100BBECAD /* PBXContainerItemProxy */;
-		};
-		EBB980A12BC3881100BBECAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EBB980832BC3880E00BBECAD /* CookWhat */;
-			targetProxy = EBB980A02BC3881100BBECAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,7 +360,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
@@ -442,10 +368,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnphilliplee.CookWhat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,7 +399,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
@@ -480,10 +407,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnphilliplee.CookWhat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -496,16 +424,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5GZDZZ4KP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnphilliplee.CookWhatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookWhat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CookWhat";
 			};
 			name = Debug;
@@ -519,61 +448,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5GZDZZ4KP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnphilliplee.CookWhatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookWhat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CookWhat";
-			};
-			name = Release;
-		};
-		EBB980B02BC3881100BBECAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z5GZDZZ4KP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnphilliplee.CookWhatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CookWhat;
-			};
-			name = Debug;
-		};
-		EBB980B12BC3881100BBECAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z5GZDZZ4KP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnphilliplee.CookWhatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CookWhat;
 			};
 			name = Release;
 		};
@@ -603,15 +489,6 @@
 			buildConfigurations = (
 				EBB980AD2BC3881100BBECAD /* Debug */,
 				EBB980AE2BC3881100BBECAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EBB980AF2BC3881100BBECAD /* Build configuration list for PBXNativeTarget "CookWhatUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EBB980B02BC3881100BBECAD /* Debug */,
-				EBB980B12BC3881100BBECAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
