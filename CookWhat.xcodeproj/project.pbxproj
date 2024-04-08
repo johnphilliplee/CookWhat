@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		EBB980882BC3880E00BBECAD /* CookWhatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980872BC3880E00BBECAD /* CookWhatApp.swift */; };
-		EBB9808A2BC3880E00BBECAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980892BC3880E00BBECAD /* ContentView.swift */; };
+		EBB9808A2BC3880E00BBECAD /* IngredientInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980892BC3880E00BBECAD /* IngredientInputView.swift */; };
 		EBB9808C2BC3881000BBECAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB9808B2BC3881000BBECAD /* Assets.xcassets */; };
 		EBB980902BC3881000BBECAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB9808F2BC3881000BBECAD /* Preview Assets.xcassets */; };
 		EBB9809A2BC3881100BBECAD /* CookWhatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980992BC3881100BBECAD /* CookWhatTests.swift */; };
+		EBB980B32BC394E900BBECAD /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980B22BC394E900BBECAD /* RecipeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +28,13 @@
 /* Begin PBXFileReference section */
 		EBB980842BC3880E00BBECAD /* CookWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB980872BC3880E00BBECAD /* CookWhatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookWhatApp.swift; sourceTree = "<group>"; };
-		EBB980892BC3880E00BBECAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBB980892BC3880E00BBECAD /* IngredientInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInputView.swift; sourceTree = "<group>"; };
 		EBB9808B2BC3881000BBECAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB9808D2BC3881000BBECAD /* CookWhat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CookWhat.entitlements; sourceTree = "<group>"; };
 		EBB9808F2BC3881000BBECAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBB980952BC3881100BBECAD /* CookWhatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookWhatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB980992BC3881100BBECAD /* CookWhatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookWhatTests.swift; sourceTree = "<group>"; };
+		EBB980B22BC394E900BBECAD /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				EBB980872BC3880E00BBECAD /* CookWhatApp.swift */,
-				EBB980892BC3880E00BBECAD /* ContentView.swift */,
+				EBB980892BC3880E00BBECAD /* IngredientInputView.swift */,
+				EBB980B22BC394E900BBECAD /* RecipeService.swift */,
 				EBB9808B2BC3881000BBECAD /* Assets.xcassets */,
 				EBB9808D2BC3881000BBECAD /* CookWhat.entitlements */,
 				EBB9808E2BC3881000BBECAD /* Preview Content */,
@@ -199,7 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB9808A2BC3880E00BBECAD /* ContentView.swift in Sources */,
+				EBB9808A2BC3880E00BBECAD /* IngredientInputView.swift in Sources */,
+				EBB980B32BC394E900BBECAD /* RecipeService.swift in Sources */,
 				EBB980882BC3880E00BBECAD /* CookWhatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

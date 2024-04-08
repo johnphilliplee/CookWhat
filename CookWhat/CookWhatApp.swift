@@ -11,7 +11,7 @@ import SwiftUI
 struct CookWhatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IngredientInputView(recipeService: MockRecipeService())
         }
     }
 }
