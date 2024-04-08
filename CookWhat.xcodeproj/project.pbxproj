@@ -12,7 +12,6 @@
 		EBB9808C2BC3881000BBECAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB9808B2BC3881000BBECAD /* Assets.xcassets */; };
 		EBB980902BC3881000BBECAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB9808F2BC3881000BBECAD /* Preview Assets.xcassets */; };
 		EBB980B32BC394E900BBECAD /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980B22BC394E900BBECAD /* RecipeService.swift */; };
-		EBB980B52BC39E2C00BBECAD /* MockRecipeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980B42BC39E2C00BBECAD /* MockRecipeServiceTests.swift */; };
 		EBB980B92BC3A18100BBECAD /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980B82BC3A18100BBECAD /* Title.swift */; };
 		EBB980BB2BC3A19600BBECAD /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980BA2BC3A19600BBECAD /* Body.swift */; };
 		EBB980BE2BC3A1C300BBECAD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980BD2BC3A1C300BBECAD /* Colors.swift */; };
@@ -43,7 +42,6 @@
 		EBB9808F2BC3881000BBECAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBB980952BC3881100BBECAD /* CookWhatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookWhatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB980B22BC394E900BBECAD /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
-		EBB980B42BC39E2C00BBECAD /* MockRecipeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRecipeServiceTests.swift; sourceTree = "<group>"; };
 		EBB980B82BC3A18100BBECAD /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		EBB980BA2BC3A19600BBECAD /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
 		EBB980BD2BC3A1C300BBECAD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 		EBB980982BC3881100BBECAD /* CookWhatTests */ = {
 			isa = PBXGroup;
 			children = (
-				EBB980B42BC39E2C00BBECAD /* MockRecipeServiceTests.swift */,
 				EBB980CE2BC3B28D00BBECAD /* IngredientInputViewModelTests.swift */,
 			);
 			path = CookWhatTests;
@@ -312,7 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB980CF2BC3B28D00BBECAD /* IngredientInputViewModelTests.swift in Sources */,
-				EBB980B52BC39E2C00BBECAD /* MockRecipeServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
