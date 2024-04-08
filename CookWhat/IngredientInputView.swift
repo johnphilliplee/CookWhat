@@ -40,34 +40,29 @@ struct IngredientInputView: View {
                 }
             }
 
-            Button(action: {
+            PrimaryButton(action: {
                 recipeService.fetchRecipes(ingredients: ingredients) { recipes in
                     self.recipes = recipes
                 }
-            }) {
-                Text("Find Recipes")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-            }
+            }, label: "Find Recipes")
             .padding()
-
+            
             VStack {
                 ScrollView {
                     VStack {
                         ForEach(recipes, id: \.name) { recipe in
-                            VStack(alignment: .leading) {
-                                Text(recipe.name)
-                                    .font(.headline)
-                                Text(recipe.ingredients.joined(separator: ", "))
-                                    .font(.subheadline)
+                            Card {
+                                VStack(alignment: .leading) {
+                                    Text(recipe.name)
+                                        .font(.headline)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    Text(recipe.ingredients.joined(separator: ", "))
+                                        .font(.subheadline)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                }
+                                .frame(maxWidth: .infinity)
+                                .padding()
                             }
-                            .padding()
-                            .background(Color(.systemGray6))
-                            .cornerRadius(10)
-                            .shadow(color: .gray, radius: 2, x: 0, y: 2)
                         }
                     }
                 }
