@@ -44,9 +44,10 @@ struct IngredientInputView: View {
                 recipeService.fetchRecipes(ingredients: ingredients) { recipes in
                     self.recipes = recipes
                 }
-            }, label: "Find Recipes")
+            }, label: "Find Recipes", isEnabled: .constant(!ingredients.isEmpty))
             .padding()
-            
+            .disabled(ingredients.isEmpty) 
+
             VStack {
                 ScrollView {
                     VStack {
