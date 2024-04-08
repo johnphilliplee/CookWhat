@@ -1,0 +1,24 @@
+# .github/workflows/ci.yml
+name: CI
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main, 'release/*' ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.3.0
+    - name: Install dependencies
+      run: bundle install
+    - name: Run tests
+      run: bundle exec fastlane ios test
+    - name: Build and upload to TestFlight
+      if: startsWith(github.ref, 'refs/heads/release/')
+      run: bundle exec fastlane ios beta
