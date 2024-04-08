@@ -1,34 +1,25 @@
+// IngredientInputView.swift
 import SwiftUI
 
 struct IngredientInputView: View {
-    @ObservedObject var recipeService: MockRecipeService
-    @State var ingredients: [String] = []
-    @State var recipes: [Recipe] = []
-    @State var newIngredient: String = ""
+    @ObservedObject var viewModel: IngredientInputViewModel
 
     var body: some View {
         VStack {
-            TextField("Enter ingredient", text: $newIngredient, onCommit: {
-                self.ingredients.append(self.newIngredient)
-                self.newIngredient = ""
-            })
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-            .padding()
+            TextField("Enter ingredient", text: $viewModel.newIngredient, onCommit: viewModel.addIngredient)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
 
-            RemovableItemList(items: $ingredients)
+            RemovableItemList(items: $viewModel.ingredients)
 
-            PrimaryButton(action: {
-                recipeService.fetchRecipes(ingredients: ingredients) { recipes in
-                    self.recipes = recipes
-                }
-            }, label: "Find Recipes", isEnabled: .constant(!ingredients.isEmpty))
-            .padding()
-            .disabled(ingredients.isEmpty)
+            PrimaryButton(action: viewModel.fetchRecipes, label: "Find Recipes", isEnabled: .constant(!viewModel.ingredients.isEmpty))
+                .padding()
+                .disabled(viewModel.ingredients.isEmpty)
 
             VStack {
                 ScrollView {
                     VStack {
-                        ForEach(recipes, id: \.name) { recipe in
+                        ForEach(viewModel.recipes, id: \.name) { recipe in
                             Card {
                                 VStack(alignment: .leading) {
                                     Text(recipe.name)

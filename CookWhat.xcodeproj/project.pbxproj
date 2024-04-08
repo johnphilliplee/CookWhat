@@ -20,6 +20,8 @@
 		EBB980C42BC3A23A00BBECAD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980C32BC3A23A00BBECAD /* Card.swift */; };
 		EBB980C62BC3AFAD00BBECAD /* RemovableItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980C52BC3AFAD00BBECAD /* RemovableItemList.swift */; };
 		EBB980C82BC3B00000BBECAD /* RemovableItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980C72BC3B00000BBECAD /* RemovableItemView.swift */; };
+		EBB980CB2BC3B18000BBECAD /* IngredientInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980CA2BC3B18000BBECAD /* IngredientInputViewModel.swift */; };
+		EBB980CF2BC3B28D00BBECAD /* IngredientInputViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB980CE2BC3B28D00BBECAD /* IngredientInputViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		EBB980C32BC3A23A00BBECAD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		EBB980C52BC3AFAD00BBECAD /* RemovableItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovableItemList.swift; sourceTree = "<group>"; };
 		EBB980C72BC3B00000BBECAD /* RemovableItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovableItemView.swift; sourceTree = "<group>"; };
+		EBB980CA2BC3B18000BBECAD /* IngredientInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInputViewModel.swift; sourceTree = "<group>"; };
+		EBB980CE2BC3B28D00BBECAD /* IngredientInputViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInputViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +94,11 @@
 		EBB980862BC3880E00BBECAD /* CookWhat */ = {
 			isa = PBXGroup;
 			children = (
+				EBB980C92BC3B17400BBECAD /* ViewModel */,
 				EBB980B62BC3A14D00BBECAD /* DesignSystem */,
 				EBB980872BC3880E00BBECAD /* CookWhatApp.swift */,
-				EBB980892BC3880E00BBECAD /* IngredientInputView.swift */,
-				EBB980B22BC394E900BBECAD /* RecipeService.swift */,
+				EBB980CC2BC3B19500BBECAD /* View */,
+				EBB980CD2BC3B19B00BBECAD /* Service */,
 				EBB9808B2BC3881000BBECAD /* Assets.xcassets */,
 				EBB9808D2BC3881000BBECAD /* CookWhat.entitlements */,
 				EBB9808E2BC3881000BBECAD /* Preview Content */,
@@ -113,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				EBB980B42BC39E2C00BBECAD /* MockRecipeServiceTests.swift */,
+				EBB980CE2BC3B28D00BBECAD /* IngredientInputViewModelTests.swift */,
 			);
 			path = CookWhatTests;
 			sourceTree = "<group>";
@@ -161,6 +167,30 @@
 				EBB980C32BC3A23A00BBECAD /* Card.swift */,
 			);
 			path = Layouts;
+			sourceTree = "<group>";
+		};
+		EBB980C92BC3B17400BBECAD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBB980CA2BC3B18000BBECAD /* IngredientInputViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EBB980CC2BC3B19500BBECAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBB980892BC3880E00BBECAD /* IngredientInputView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBB980CD2BC3B19B00BBECAD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EBB980B22BC394E900BBECAD /* RecipeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +303,7 @@
 				EBB980882BC3880E00BBECAD /* CookWhatApp.swift in Sources */,
 				EBB980BB2BC3A19600BBECAD /* Body.swift in Sources */,
 				EBB980C42BC3A23A00BBECAD /* Card.swift in Sources */,
+				EBB980CB2BC3B18000BBECAD /* IngredientInputViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB980CF2BC3B28D00BBECAD /* IngredientInputViewModelTests.swift in Sources */,
 				EBB980B52BC39E2C00BBECAD /* MockRecipeServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
